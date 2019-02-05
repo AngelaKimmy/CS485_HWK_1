@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Rings: " + count.ToString();
         if(count >= 12 && enemies >= 5)
         {
             winText.text = "You Win!";
