@@ -21,10 +21,14 @@ public class Menu : MonoBehaviour
     // Update is called once per frame
     void OnGUI()
     {
-        if(GUI.Button(new Rect(origin_x, origin_y, buttonWidth, buttonHeight), "START"))
+        if(GUI.Button(new Rect(origin_x, origin_y + 20, buttonWidth, buttonHeight), "START"))
         {
             Application.LoadLevel(1);
         }
 
+        if (GUI.Button(new Rect(origin_x, origin_y + 100, buttonWidth, buttonHeight), "OBJECTIVE"))
+        {
+            Application.LoadLevel(2);
+        }
     }
 }

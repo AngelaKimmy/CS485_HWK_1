@@ -12,12 +12,15 @@ public class CameraController : MonoBehaviour
     //*******************
 
     public GameObject player;
+    private AudioSource backgroundMusic;
 
     private Vector3 offset;
 
     // Start is called before the first frame update
     void Start()
     {
+        backgroundMusic = GetComponent<AudioSource>();
+        backgroundMusic.loop = true;
         offset = transform.position - player.transform.position;
         //For menu***********
         buttonWidth = 100;
